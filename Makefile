@@ -16,4 +16,4 @@ install:
 	@echo 'g <bookmark_name> - Goes (cd) to the directory associated with "bookmark_name"'
 	@echo 'p <bookmark_name> - Prints the directory associated with "bookmark_name"'
 	@echo 'd <bookmark_name> - Deletes the bookmark'
-	@echo 'l                 - Lists all available bookmarks'
+	@echo 'li                - Lists all available bookmarks'
