@@ -38,8 +38,8 @@ if [ ! -n "$SDIRS" ]; then
 fi
 touch $SDIRS
 
-RED="0;31m"
-GREEN="0;33m"
+BASHMARKS_RED="0;31m"
+BASHMARKS_GREEN="0;33m"
 
 # save current directory to bookmarks
 function s {
@@ -60,9 +60,9 @@ function g {
     if [ -d "$target" ]; then
         cd "$target"
     elif [ ! -n "$target" ]; then
-        echo -e "\033[${RED}WARNING: '${1}' bashmark does not exist\033[00m"
+        echo -e "\033[${BASHMARKS_RED}WARNING: '${1}' bashmark does not exist\033[00m"
     else
-        echo -e "\033[${RED}WARNING: '${target}' does not exist\033[00m"
+        echo -e "\033[${BASHMARKS_RED}WARNING: '${target}' does not exist\033[00m"
     fi
 }
 
@@ -167,3 +167,4 @@ else
     complete -F _comp p
     complete -F _comp d
 fi
+
